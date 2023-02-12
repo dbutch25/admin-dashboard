@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { FiSettings } from 'react-icons/fi'
+import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
-function App() {
+import './App.css'
+
+const App = () => {
+  const activeMenu = true;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>App</h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
